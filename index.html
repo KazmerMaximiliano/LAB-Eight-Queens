@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight Queens</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="overlay dark" id="modal">
+        <div class="modal">
+            <div class="modal-text">
+                <input type="number" id="queens-number" class="modal-input" type="text" placeholder="Cantidad de reinas">
+                <input type="number" id="fps-number" class="modal-input" type="text" placeholder="Movimientos por segundo">
+            </div>
+            <div class="modal-info">
+                <div class="message" id="message"></div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn error" id="modal-btn-error">Cancelar</button>
+                <button class="btn success" id="modal-btn-success">Generar</button>
+            </div>
+        </div>
+    </div>
+    <div class="floating-btn">
+        <button id="config-btn" class="f-btn green">
+            <img src="./img/cog.svg">
+        </button>
+        <button id="play-btn" class="f-btn blue">
+            <img style="display: block;" class="play" src="./img/play.svg">
+            <img style="display: none;" src="./img/pause.svg" alt="">
+        </button>
+    </div>
+    <div class="game-container">
+        <div id="game"></div>
+    </div>
+    
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
